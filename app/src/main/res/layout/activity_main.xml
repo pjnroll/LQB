@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LiveQuizBot"
+        android:textSize="36sp" />
+
+    <Switch
+        android:id="@+id/swc_activate_permission"
+        android:layout_below="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal" />
+    <Switch
+        android:id="@+id/swc_activate_service"
+        android:layout_below="@+id/swc_activate_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_allow_system_alert_window"
+        android:layout_below="@+id/swc_activate_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Switch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:padding="8dp"
+        android:layout_below="@+id/tv_allow_system_alert_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="q"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/txtAns1"
+        android:padding="8dp"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txtAns2"
+        android:padding="8dp"
+        android:layout_below="@+id/txtAns1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txtAns3"
+        android:padding="8dp"
+        android:layout_below="@+id/txtAns2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:padding="8dp"
+        android:layout_below="@+id/txtAns3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO" />
+
+
+</RelativeLayout>
